@@ -1,0 +1,24 @@
+@if (!accepted()) {
+  <div class="container">
+    <p class="name">GÉNESIS 💖</p>
+    <h1>¿Quieres salir conmigo este sábado? :3</h1>
+    <div class="buttons">
+      <button
+        class="yes"
+        [style.transform]="'scale(' + yesScale() + ')'"
+        (click)="onYes()"
+      >
+        Sí 💖
+      </button>
+
+      <button class="no" (click)="onNo()">
+        No T.T
+      </button>
+    </div>
+  </div>
+} @else {
+  <div class="love-container">
+    <div class="heart"></div>
+    <h2>¡Sabía que dirías que sí! 💘</h2>
+  </div>
+}
